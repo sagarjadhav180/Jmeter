@@ -12,15 +12,15 @@ pipeline {
     stages {
 		stage('Checkout Project') {
 		  steps {
-			  git branch: '${BRANCH}', 
+			  git branch: 'master', 
 			  credentialsId: 'GIT_CREDENTIAL',
-			  url: 'https://github.com/ContactPoint/API_Automation.git'
+			  url: 'https://github.com/sagarjadhav180/Jmeter.git'
 		  }  
 		}
 	    
-        stage('Test Execution') {
+        stage('Run jmeter test') {
             steps {
-				sh "mvn clean install test -DsuiteXmlFile=${XML} --file CFA_API/pom.xml -Denv=${ENV} -Dapiurl=${API_URL} -Dappurl=${APP_URL} -Ddburl=${DB_URL} -Dusername=${APP_USERNAME} -Dpassword=${APP_PASSWORD}"
+				sh '/opt/apache-jmeter-5.2/bin/jmeter.sh -n -t Jmeter/Account Details.jmx'
             }
         }
     }
