@@ -23,7 +23,8 @@ pipeline {
         stage('Run jmeter test') {
             steps {
 
-				sh '/opt/apache-jmeter-5.2/bin/jmeter.sh -n -t /Account Details.jmx'
+
+				sh '/opt/apache-jmeter-5.2/bin/jmeter.sh -n -t /AccountDetails.jmx'
             }
         }
     }
