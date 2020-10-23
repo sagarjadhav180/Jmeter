@@ -7,10 +7,10 @@ pipeline {
         GIT_CREDENTIAL = credentials('GIT_CREDENTIAL')
     }
     
-    tools {
-    	maven 'Maven-3.6.0'
-    	git 'Default'
-    }
+
+
+
+
     stages {
 		stage('Checkout Project') {
 		  steps {
