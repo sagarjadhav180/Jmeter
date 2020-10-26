@@ -1,5 +1,3 @@
-
-
 pipeline {
     agent any
     
@@ -7,10 +5,6 @@ pipeline {
         GIT_CREDENTIAL = credentials('GIT_CREDENTIAL')
     }
     
-
-
-
-
     stages {
 		stage('Checkout Project') {
 		  steps {
@@ -22,9 +16,7 @@ pipeline {
 	    
         stage('Run jmeter test') {
             steps {
-
-
-				sh '/opt/apache-jmeter-5.2/bin/jmeter.sh -n -t test1.jmx'
+				sh '/opt/apache-jmeter-5.2/bin/jmeter.sh -n -t Account Details.jmx'
             }
         }
     }
