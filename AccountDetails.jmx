@@ -70,7 +70,7 @@ WDS.sampleResult.sampleEnd()
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;newac@yopmail.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;snehal.d@moentek.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
