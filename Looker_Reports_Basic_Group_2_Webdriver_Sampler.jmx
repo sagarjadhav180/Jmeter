@@ -1374,7 +1374,7 @@ WDS.sampleResult.sampleEnd()
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/home/comp/Downloads/testresults (6).jtl</stringProp>
+        <stringProp name="filename">/home/comp/Downloads/testresults (3).jtl</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
