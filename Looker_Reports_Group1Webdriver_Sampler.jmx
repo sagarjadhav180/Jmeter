@@ -43,7 +43,7 @@
           <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
           <stringProp name="ChromeDriverConfig.chromedriver_path">chromedriver</stringProp>
           <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
-          <boolProp name="ChromeDriverConfig.headless_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.headless_enabled">true</boolProp>
           <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.incognito_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.no_sandbox_enabled">false</boolProp>
@@ -52,7 +52,7 @@
         <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Opening Convirza" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
-WDS.browser.get(&apos;https://stag-5-cmo-1.convirza.com/#/login&apos;);
+WDS.browser.get(&apos;https://stag-7-cmo-1.convirza.com/#/login&apos;);
 
 WDS.sampleResult.sampleEnd()
 </stringProp>
@@ -69,7 +69,7 @@ WDS.sampleResult.sampleEnd()
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;newac@yopmail.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;qaautomation@yopmail.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
@@ -338,7 +338,7 @@ WDS.sampleResult.sampleEnd()
           <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
           <stringProp name="ChromeDriverConfig.chromedriver_path">chromedriver</stringProp>
           <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
-          <boolProp name="ChromeDriverConfig.headless_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.headless_enabled">true</boolProp>
           <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.incognito_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.no_sandbox_enabled">false</boolProp>
@@ -364,7 +364,7 @@ WDS.sampleResult.sampleEnd()
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;newac@yopmail.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;qaautomation@yopmail.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
@@ -670,7 +670,7 @@ WDS.sampleResult.sampleEnd()
           <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
           <stringProp name="ChromeDriverConfig.chromedriver_path">chromedriver</stringProp>
           <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
-          <boolProp name="ChromeDriverConfig.headless_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.headless_enabled">true</boolProp>
           <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.incognito_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.no_sandbox_enabled">false</boolProp>
@@ -696,7 +696,7 @@ WDS.sampleResult.sampleEnd()
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;newac@yopmail.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;qaautomation@yopmail.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
@@ -1029,7 +1029,7 @@ WDS.sampleResult.sampleEnd()
           <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
           <stringProp name="ChromeDriverConfig.chromedriver_path">chromedriver</stringProp>
           <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
-          <boolProp name="ChromeDriverConfig.headless_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.headless_enabled">true</boolProp>
           <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.incognito_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.no_sandbox_enabled">false</boolProp>
@@ -1055,7 +1055,7 @@ WDS.sampleResult.sampleEnd()
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;newac@yopmail.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;qaautomation@yopmail.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
@@ -1324,7 +1324,7 @@ WDS.sampleResult.sampleEnd()
           <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
           <stringProp name="ChromeDriverConfig.chromedriver_path">chromedriver</stringProp>
           <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
-          <boolProp name="ChromeDriverConfig.headless_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.headless_enabled">true</boolProp>
           <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.incognito_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.no_sandbox_enabled">false</boolProp>
@@ -1350,7 +1350,7 @@ WDS.sampleResult.sampleEnd()
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;newac@yopmail.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;qaautomation@yopmail.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
@@ -1611,7 +1611,7 @@ WDS.sampleResult.sampleEnd()
           <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
           <stringProp name="ChromeDriverConfig.chromedriver_path">chromedriver</stringProp>
           <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
-          <boolProp name="ChromeDriverConfig.headless_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.headless_enabled">true</boolProp>
           <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.incognito_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.no_sandbox_enabled">false</boolProp>
@@ -1637,7 +1637,7 @@ WDS.sampleResult.sampleEnd()
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;newac@yopmail.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;qaautomation@yopmail.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
@@ -1924,7 +1924,7 @@ WDS.sampleResult.sampleEnd()
           <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
           <stringProp name="ChromeDriverConfig.chromedriver_path">chromedriver</stringProp>
           <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
-          <boolProp name="ChromeDriverConfig.headless_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.headless_enabled">true</boolProp>
           <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.incognito_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.no_sandbox_enabled">false</boolProp>
@@ -1950,7 +1950,7 @@ WDS.sampleResult.sampleEnd()
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;newac@yopmail.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;qaautomation@yopmail.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
