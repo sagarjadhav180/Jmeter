@@ -65,7 +65,7 @@ WDS.sampleResult.sampleEnd()
 
 	//java.lang.Thread.sleep(2000);
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,2)
+	var wait=new ui.WebDriverWait(WDS.browser,50)
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
@@ -85,7 +85,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,5)
+	var wait=new ui.WebDriverWait(WDS.browser,50)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	//var reports_sidebar = WDS.browser.findElement(pkg.By.xpath(&quot;//ul[@id=&apos;sidebar&apos;]/li[2]/a&quot;));
@@ -424,7 +424,7 @@ WDS.sampleResult.sampleEnd()
 
 	//java.lang.Thread.sleep(2000);
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,2)
+	var wait=new ui.WebDriverWait(WDS.browser,50)
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
@@ -444,7 +444,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,5)
+	var wait=new ui.WebDriverWait(WDS.browser,50)
 	var pkg = JavaImporter(org.openqa.selenium)
 	
 	java.lang.Thread.sleep(2000);
