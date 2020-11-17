@@ -98,10 +98,10 @@ WDS.sampleResult.sampleEnd()
 
 	// Opening Call Logs Report
 		
-	WDS.browser.findElement(pkg.By.xpath(&quot;//span[@class=&apos;select2-arrow&apos;]&quot;)).click();
+	//WDS.browser.findElement(pkg.By.xpath(&quot;//span[@class=&apos;select2-arrow&apos;]&quot;)).click();
 
-	WDS.browser.findElement(pkg.By.xpath(&quot;//input[@id=&apos;s2id_autogen1_search&apos;]&quot;)).sendKeys(&quot;Call Logs&quot;);
-	WDS.browser.findElement(pkg.By.xpath(&quot;//input[@id=&apos;s2id_autogen1_search&apos;]&quot;)).sendKeys(pkg.Keys.ENTER);
+	//WDS.browser.findElement(pkg.By.xpath(&quot;//input[@id=&apos;s2id_autogen1_search&apos;]&quot;)).sendKeys(&quot;Call Logs&quot;);
+	//WDS.browser.findElement(pkg.By.xpath(&quot;//input[@id=&apos;s2id_autogen1_search&apos;]&quot;)).sendKeys(pkg.Keys.ENTER);
 	
 	
 
@@ -755,7 +755,7 @@ WDS.sampleResult.sampleEnd()
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/home/comp/Downloads/testresults (18).jtl</stringProp>
+        <stringProp name="filename">/home/comp/Downloads/testresults (19).jtl</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
