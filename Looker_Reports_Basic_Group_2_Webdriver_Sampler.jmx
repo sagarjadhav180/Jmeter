@@ -183,7 +183,7 @@ WDS.sampleResult.sampleEnd()
 	WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[1]/div[1]/strong&quot;)).click();
 	var Days = WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[2]/table/tbody/tr[1]/td[2]/lk-dashboard-filter/lk-filter/table/tbody/tr/td[2]/span[2]/span[1]/input&quot;));
 	Days.clear();
-	Days.sendKeys(&quot;120&quot;);
+	Days.sendKeys(&quot;365&quot;);
 	WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[1]/div[1]/strong&quot;)).click();
 	
 
@@ -533,7 +533,7 @@ WDS.sampleResult.sampleEnd()
 	var Days = WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[2]/table/tbody/tr[1]/td[2]/lk-dashboard-filter/lk-filter/table/tbody/tr/td[2]/span[2]/span[1]/input&quot;));
 	//java.lang.Thread.sleep(4000);
 	Days.clear();
-	Days.sendKeys(&quot;120&quot;);
+	Days.sendKeys(&quot;365&quot;);
 	
 	WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[1]/div[1]/strong&quot;)).click();
 	
@@ -755,7 +755,7 @@ WDS.sampleResult.sampleEnd()
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/home/comp/Downloads/testresults (19).jtl</stringProp>
+        <stringProp name="filename">/home/comp/Downloads/testresults (20).jtl</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
