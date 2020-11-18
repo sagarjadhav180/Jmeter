@@ -42,7 +42,7 @@
           <boolProp name="WebDriverConfig.maximize_browser">true</boolProp>
           <boolProp name="WebDriverConfig.reset_per_iteration">false</boolProp>
           <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
-          <stringProp name="ChromeDriverConfig.chromedriver_path">/home/comp/git/Jmeter/chromedriver</stringProp>
+          <stringProp name="ChromeDriverConfig.chromedriver_path">chromedriver</stringProp>
           <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.headless_enabled">true</boolProp>
           <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
@@ -71,7 +71,7 @@ WDS.sampleResult.sampleEnd()
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;snehal.d@moentek.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;admin_35882@convirza.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
@@ -123,11 +123,11 @@ WDS.sampleResult.sampleEnd()
 	var pkg = JavaImporter(org.openqa.selenium)
 	
 	//switching frame
-	java.lang.Thread.sleep(4000);
+	java.lang.Thread.sleep(2000);
 	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
 	//WDS.browser.switchTo().frame(iframe1);
 	WDS.browser.switchTo().frame(0);
-	java.lang.Thread.sleep(4000);
+	java.lang.Thread.sleep(2000);
 	//WDS.browser.switchTo().frame(WDS.browser.findElement(pkg.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;)));
 
 	// Run button
@@ -341,7 +341,7 @@ WDS.sampleResult.sampleEnd()
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/home/comp/Downloads/testresults (7).jtl</stringProp>
+          <stringProp name="filename">/home/comp/Downloads/testresults (39).jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
