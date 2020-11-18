@@ -16,7 +16,7 @@ pipeline {
 	    
         stage('Run jmeter test') {
             steps {
-				sh '/opt/apache-jmeter-5.2/bin/jmeter.sh -n -t Looker_Reports_Basic_Group_2_Webdriver_Sampler.jmx -l testresults.jtl'
+				sh '/opt/apache-jmeter-5.2/bin/jmeter.sh -n -t MarketingDashboardEnhanced.jmx -l testresults.jtl'
             }
         }
     }
