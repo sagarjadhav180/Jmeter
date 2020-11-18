@@ -114,15 +114,15 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,59)
+	var wait=new ui.WebDriverWait(WDS.browser,80)
 	var pkg = JavaImporter(org.openqa.selenium)1q  
 	
 	//switching frame
-	java.lang.Thread.sleep(4000);
+	java.lang.Thread.sleep(1000);
 	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
 	//WDS.browser.switchTo().frame(iframe1);
 	WDS.browser.switchTo().frame(0);
-	java.lang.Thread.sleep(4000);
+	java.lang.Thread.sleep(1000);
 	
 
 	// Run button
