@@ -178,7 +178,7 @@ WDS.sampleResult.sampleEnd()
 	var pkg = JavaImporter(org.openqa.selenium)
 	
 	// Run button verification
-	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[1]/div[2]/div[1]/button&quot;)));
+	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[1]/div[2]/div[1]/button[@aria-hidden=&apos;false&apos;]&quot;)));
 
 
 WDS.sampleResult.sampleEnd()
