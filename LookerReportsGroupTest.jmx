@@ -305,7 +305,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <boolProp name="WebDriverConfig.maximize_browser">true</boolProp>
           <boolProp name="WebDriverConfig.reset_per_iteration">false</boolProp>
           <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
-          <stringProp name="ChromeDriverConfig.chromedriver_path">chromedriver</stringProp>
+          <stringProp name="ChromeDriverConfig.chromedriver_path">/home/comp/git/Jmeter/chromedriver</stringProp>
           <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.headless_enabled">true</boolProp>
           <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
@@ -364,13 +364,6 @@ WDS.sampleResult.sampleEnd()</stringProp>
 
 	java.lang.Thread.sleep(2000);
 
-//switching frame
-	java.lang.Thread.sleep(1000);
-	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
-	//WDS.browser.switchTo().frame(iframe1);
-	WDS.browser.switchTo().frame(0);
-	java.lang.Thread.sleep(1000);
-
 
 WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.parameters"></stringProp>
@@ -385,6 +378,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
 	var pkg = JavaImporter(org.openqa.selenium)
 	
 	// Opening Account Details Report	
+	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//span[@class=&apos;select2-arrow&apos;]&quot;)));
 	WDS.browser.findElement(pkg.By.xpath(&quot;//span[@class=&apos;select2-arrow&apos;]&quot;)).click();
 	WDS.browser.findElement(pkg.By.xpath(&quot;//input[@id=&apos;s2id_autogen1_search&apos;]&quot;)).sendKeys(&quot;Account Details&quot;);
 	WDS.browser.findElement(pkg.By.xpath(&quot;//input[@id=&apos;s2id_autogen1_search&apos;]&quot;)).sendKeys(pkg.Keys.ENTER);
@@ -404,6 +398,13 @@ var wait=new ui.WebDriverWait(WDS.browser,59)
 
 var pkg = JavaImporter(org.openqa.selenium)
 	
+//switching frame
+	java.lang.Thread.sleep(1000);
+	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
+	//WDS.browser.switchTo().frame(iframe1);
+	WDS.browser.switchTo().frame(0);
+	java.lang.Thread.sleep(1000);
+
 		
 // Change Filter to 365 Days
 
@@ -646,13 +647,6 @@ WDS.sampleResult.sampleEnd()</stringProp>
 
 	java.lang.Thread.sleep(2000);
 
-//switching frame
-	java.lang.Thread.sleep(1000);
-	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
-	//WDS.browser.switchTo().frame(iframe1);
-	WDS.browser.switchTo().frame(0);
-	java.lang.Thread.sleep(1000);
-
 
 WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.parameters"></stringProp>
@@ -685,7 +679,13 @@ var ui=JavaImporter(org.openqa.selenium.support.ui)
 var wait=new ui.WebDriverWait(WDS.browser,59)
 
 var pkg = JavaImporter(org.openqa.selenium)
-	
+
+	//switching frame
+	java.lang.Thread.sleep(1000);
+	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
+	//WDS.browser.switchTo().frame(iframe1);
+	WDS.browser.switchTo().frame(0);
+	java.lang.Thread.sleep(1000);
 		
 // Change Filter to 365 Days
 
@@ -928,13 +928,6 @@ WDS.sampleResult.sampleEnd()</stringProp>
 
 	java.lang.Thread.sleep(2000);
 
-//switching frame
-	java.lang.Thread.sleep(1000);
-	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
-	//WDS.browser.switchTo().frame(iframe1);
-	WDS.browser.switchTo().frame(0);
-	java.lang.Thread.sleep(1000);
-
 
 WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.parameters"></stringProp>
@@ -967,7 +960,13 @@ var ui=JavaImporter(org.openqa.selenium.support.ui)
 var wait=new ui.WebDriverWait(WDS.browser,59)
 
 var pkg = JavaImporter(org.openqa.selenium)
-	
+
+	//switching frame
+	java.lang.Thread.sleep(1000);
+	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
+	//WDS.browser.switchTo().frame(iframe1);
+	WDS.browser.switchTo().frame(0);
+	java.lang.Thread.sleep(1000);
 		
 // Change Filter to 365 Days
 
@@ -1210,13 +1209,6 @@ WDS.sampleResult.sampleEnd()</stringProp>
 
 	java.lang.Thread.sleep(2000);
 
-//switching frame
-	java.lang.Thread.sleep(1000);
-	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
-	//WDS.browser.switchTo().frame(iframe1);
-	WDS.browser.switchTo().frame(0);
-	java.lang.Thread.sleep(1000);
-
 
 WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.parameters"></stringProp>
@@ -1250,7 +1242,13 @@ var wait=new ui.WebDriverWait(WDS.browser,59)
 
 var pkg = JavaImporter(org.openqa.selenium)
 	
-		
+//switching frame
+	java.lang.Thread.sleep(1000);
+	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
+	//WDS.browser.switchTo().frame(iframe1);
+	WDS.browser.switchTo().frame(0);
+	java.lang.Thread.sleep(1000);
+			
 // Change Filter to 365 Days
 
 wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)));
@@ -1492,13 +1490,6 @@ WDS.sampleResult.sampleEnd()</stringProp>
 
 	java.lang.Thread.sleep(2000);
 
-//switching frame
-	java.lang.Thread.sleep(1000);
-	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
-	//WDS.browser.switchTo().frame(iframe1);
-	WDS.browser.switchTo().frame(0);
-	java.lang.Thread.sleep(1000);
-
 
 WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.parameters"></stringProp>
@@ -1532,7 +1523,14 @@ var wait=new ui.WebDriverWait(WDS.browser,59)
 
 var pkg = JavaImporter(org.openqa.selenium)
 	
-		
+
+		//switching frame
+	java.lang.Thread.sleep(1000);
+	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
+	//WDS.browser.switchTo().frame(iframe1);
+	WDS.browser.switchTo().frame(0);
+	java.lang.Thread.sleep(1000);
+	
 // Change Filter to 365 Days
 
 wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)));
@@ -1774,12 +1772,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
 
 	java.lang.Thread.sleep(2000);
 
-//switching frame
-	java.lang.Thread.sleep(1000);
-	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
-	//WDS.browser.switchTo().frame(iframe1);
-	WDS.browser.switchTo().frame(0);
-	java.lang.Thread.sleep(1000);
+
 
 
 WDS.sampleResult.sampleEnd()</stringProp>
@@ -1813,6 +1806,13 @@ WDS.sampleResult.sampleEnd()
 	var wait=new ui.WebDriverWait(WDS.browser,59)
 
 	var pkg = JavaImporter(org.openqa.selenium)
+
+	//switching frame
+	java.lang.Thread.sleep(1000);
+	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
+	//WDS.browser.switchTo().frame(iframe1);
+	WDS.browser.switchTo().frame(0);
+	java.lang.Thread.sleep(1000);
 	
 	// Run button verification
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[1]/div[2]/div[1]/button[@aria-hidden=&apos;false&apos;]&quot;)));
@@ -1913,13 +1913,6 @@ WDS.sampleResult.sampleEnd()</stringProp>
 
 	java.lang.Thread.sleep(2000);
 
-//switching frame
-	java.lang.Thread.sleep(1000);
-	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
-	//WDS.browser.switchTo().frame(iframe1);
-	WDS.browser.switchTo().frame(0);
-	java.lang.Thread.sleep(1000);
-
 
 WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.parameters"></stringProp>
@@ -1953,6 +1946,13 @@ var wait=new ui.WebDriverWait(WDS.browser,59)
 
 var pkg = JavaImporter(org.openqa.selenium)
 	
+
+//switching frame
+	java.lang.Thread.sleep(1000);
+	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
+	//WDS.browser.switchTo().frame(iframe1);
+	WDS.browser.switchTo().frame(0);
+	java.lang.Thread.sleep(1000);
 		
 // Change Filter to 365 Days
 
