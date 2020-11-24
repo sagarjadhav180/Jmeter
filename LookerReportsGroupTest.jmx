@@ -17,8 +17,8 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">2</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -52,7 +52,7 @@
         <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Call Logs -- Open  Login page" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
-WDS.browser.get(&apos;https://stag-7-cmo-1.convirza.com/#/login&apos;);
+WDS.browser.get(&apos;https://stag-5-cmo-1.convirza.com/#/login&apos;);
 
 //Logo Verification
 var pkg = JavaImporter(org.openqa.selenium)
@@ -75,9 +75,9 @@ WDS.sampleResult.sampleEnd()</stringProp>
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;lmcsuper@logmycalls.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;admin_35882@convirza.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;ScottIsDaMan&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
 
 
@@ -113,7 +113,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Call Logs -- Change filter to 365 days" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Call Logs -- Change filter to 465 days" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
@@ -130,7 +130,7 @@ WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&
 var Days = WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[2]/table/tbody/tr[1]/td[2]/lk-dashboard-filter/lk-filter/table/tbody/tr/td[2]/span[2]/span[1]/input&quot;));
 //java.lang.Thread.sleep(4000);
 Days.clear();
-Days.sendKeys(&quot;365&quot;);
+Days.sendKeys(&quot;465&quot;);
 	
 WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)).click();
 	
@@ -145,7 +145,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Call Logs -- Check performacne for 365 days filter" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Call Logs -- Check performacne for 465 days filter" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
@@ -280,8 +280,8 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">2</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -315,7 +315,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
         <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Account Details -- Open Login page" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
-WDS.browser.get(&apos;https://stag-7-cmo-1.convirza.com/#/login&apos;);
+WDS.browser.get(&apos;https://stag-5-cmo-1.convirza.com/#/login&apos;);
 
 //Logo Verification
 var pkg = JavaImporter(org.openqa.selenium)
@@ -338,9 +338,9 @@ WDS.sampleResult.sampleEnd()</stringProp>
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;lmcsuper@logmycalls.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;admin_35882@convirza.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;ScottIsDaMan&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
 
 
@@ -389,7 +389,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Account Details -- Change filter to 365 days" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Account Details -- Change filter to 465 days" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
@@ -413,7 +413,7 @@ WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&
 var Days = WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[2]/table/tbody/tr[1]/td[2]/lk-dashboard-filter/lk-filter/table/tbody/tr/td[2]/span[2]/span[1]/input&quot;));
 //java.lang.Thread.sleep(4000);
 Days.clear();
-Days.sendKeys(&quot;365&quot;);
+Days.sendKeys(&quot;465&quot;);
 	
 WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)).click();
 	
@@ -428,7 +428,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Account Details -- Check performacne for 365 days filter" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Account Details -- Check performacne for 465 days filter" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
@@ -563,8 +563,8 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">2</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -598,7 +598,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
         <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Marketing Dashboard - Enhanced -- Open Login page" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
-WDS.browser.get(&apos;https://stag-7-cmo-1.convirza.com/#/login&apos;);
+WDS.browser.get(&apos;https://stag-5-cmo-1.convirza.com/#/login&apos;);
 
 //Logo Verification
 var pkg = JavaImporter(org.openqa.selenium)
@@ -621,9 +621,9 @@ WDS.sampleResult.sampleEnd()</stringProp>
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;lmcsuper@logmycalls.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;admin_35882@convirza.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;ScottIsDaMan&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
 
 
@@ -671,7 +671,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Marketing Dashboard - Enhanced -- Change filter to 365 days" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Marketing Dashboard - Enhanced -- Change filter to 465 days" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
@@ -694,7 +694,7 @@ WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&
 var Days = WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[2]/table/tbody/tr[1]/td[2]/lk-dashboard-filter/lk-filter/table/tbody/tr/td[2]/span[2]/span[1]/input&quot;));
 //java.lang.Thread.sleep(4000);
 Days.clear();
-Days.sendKeys(&quot;365&quot;);
+Days.sendKeys(&quot;465&quot;);
 	
 WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)).click();
 	
@@ -709,7 +709,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Marketing Dashboard - Enhanced -- Check performacne for 365 days filter" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Marketing Dashboard - Enhanced -- Check performacne for 465 days filter" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
@@ -844,8 +844,8 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">2</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -879,7 +879,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
         <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Billing Usage - Enhanced -- Open Login page" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
-WDS.browser.get(&apos;https://stag-7-cmo-1.convirza.com/#/login&apos;);
+WDS.browser.get(&apos;https://stag-5-cmo-1.convirza.com/#/login&apos;);
 
 //Logo Verification
 var pkg = JavaImporter(org.openqa.selenium)
@@ -902,9 +902,9 @@ WDS.sampleResult.sampleEnd()</stringProp>
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;lmcsuper@logmycalls.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;admin_35882@convirza.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;ScottIsDaMan&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
 
 
@@ -952,7 +952,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Billing Usage - Enhanced -- Change filter to 365 days" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Billing Usage - Enhanced -- Change filter to 465 days" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
@@ -975,7 +975,7 @@ WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&
 var Days = WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[2]/table/tbody/tr[1]/td[2]/lk-dashboard-filter/lk-filter/table/tbody/tr/td[2]/span[2]/span[1]/input&quot;));
 //java.lang.Thread.sleep(4000);
 Days.clear();
-Days.sendKeys(&quot;365&quot;);
+Days.sendKeys(&quot;465&quot;);
 	
 WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)).click();
 	
@@ -990,7 +990,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Billing Usage - Enhanced  -- Check performacne for 365 days filter" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Billing Usage - Enhanced  -- Check performacne for 465 days filter" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
@@ -1125,8 +1125,8 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">2</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -1160,7 +1160,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
         <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Call Trends - Open Login Page" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
-WDS.browser.get(&apos;https://stag-7-cmo-1.convirza.com/#/login&apos;);
+WDS.browser.get(&apos;https://stag-5-cmo-1.convirza.com/#/login&apos;);
 
 //Logo Verification
 var pkg = JavaImporter(org.openqa.selenium)
@@ -1183,9 +1183,9 @@ WDS.sampleResult.sampleEnd()</stringProp>
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;lmcsuper@logmycalls.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;admin_35882@convirza.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;ScottIsDaMan&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
 
 
@@ -1233,7 +1233,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Call Trends  - Change filter to 365 days" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Call Trends  - Change filter to 465 days" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
@@ -1256,7 +1256,7 @@ WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&
 var Days = WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[2]/table/tbody/tr[1]/td[2]/lk-dashboard-filter/lk-filter/table/tbody/tr/td[2]/span[2]/span[1]/input&quot;));
 //java.lang.Thread.sleep(4000);
 Days.clear();
-Days.sendKeys(&quot;365&quot;);
+Days.sendKeys(&quot;465&quot;);
 	
 WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)).click();
 	
@@ -1271,7 +1271,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Call Trends  - Check performance for 365 days filter" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Call Trends  - Check performance for 465 days filter" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
@@ -1406,8 +1406,8 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">2</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -1441,7 +1441,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
         <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Analytics Summary -- Open Login page" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
-WDS.browser.get(&apos;https://stag-7-cmo-1.convirza.com/#/login&apos;);
+WDS.browser.get(&apos;https://stag-5-cmo-1.convirza.com/#/login&apos;);
 
 //Logo Verification
 var pkg = JavaImporter(org.openqa.selenium)
@@ -1464,9 +1464,9 @@ WDS.sampleResult.sampleEnd()</stringProp>
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;lmcsuper@logmycalls.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;admin_35882@convirza.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;ScottIsDaMan&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
 
 
@@ -1514,7 +1514,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Analytics Summary  -- Change fillter to 365 days" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Analytics Summary  -- Change fillter to 465 days" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
@@ -1538,7 +1538,7 @@ WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&
 var Days = WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[2]/table/tbody/tr[1]/td[2]/lk-dashboard-filter/lk-filter/table/tbody/tr/td[2]/span[2]/span[1]/input&quot;));
 //java.lang.Thread.sleep(4000);
 Days.clear();
-Days.sendKeys(&quot;365&quot;);
+Days.sendKeys(&quot;465&quot;);
 	
 WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)).click();
 	
@@ -1553,7 +1553,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Analytics Summary -- Check performacne for 365 days" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Analytics Summary -- Check performacne for 465 days" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
@@ -1688,8 +1688,8 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">2</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -1723,7 +1723,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
         <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Tracking Numbers Settings Report -- open Login page" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
-WDS.browser.get(&apos;https://stag-7-cmo-1.convirza.com/#/login&apos;);
+WDS.browser.get(&apos;https://stag-5-cmo-1.convirza.com/#/login&apos;);
 
 //Logo Verification
 var pkg = JavaImporter(org.openqa.selenium)
@@ -1746,9 +1746,9 @@ WDS.sampleResult.sampleEnd()</stringProp>
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;lmcsuper@logmycalls.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;admin_35882@convirza.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;ScottIsDaMan&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
 
 
@@ -1940,8 +1940,8 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">2</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -1975,7 +1975,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
         <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Scored Calls Report -- Open Login page" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
-WDS.browser.get(&apos;https://stag-7-cmo-1.convirza.com/#/login&apos;);
+WDS.browser.get(&apos;https://stag-5-cmo-1.convirza.com/#/login&apos;);
 
 //Logo Verification
 var pkg = JavaImporter(org.openqa.selenium)
@@ -1998,9 +1998,9 @@ WDS.sampleResult.sampleEnd()</stringProp>
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;lmcsuper@logmycalls.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;admin_35882@convirza.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;ScottIsDaMan&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
 
 
@@ -2048,7 +2048,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Scored Calls Report -- Change filter to 365 days" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Scored Calls Report -- Change filter to 465 days" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
@@ -2072,7 +2072,7 @@ WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&
 var Days = WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[2]/table/tbody/tr[1]/td[2]/lk-dashboard-filter/lk-filter/table/tbody/tr/td[2]/span[2]/span[1]/input&quot;));
 //java.lang.Thread.sleep(4000);
 Days.clear();
-Days.sendKeys(&quot;365&quot;);
+Days.sendKeys(&quot;465&quot;);
 	
 WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)).click();
 	
@@ -2087,7 +2087,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Scored Calls Report -- Check performacne for 365 days filter" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Scored Calls Report -- Check performacne for 465 days filter" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
@@ -2222,8 +2222,8 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">2</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -2257,7 +2257,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
         <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Legacy Report -- Call DetailsOpen Login Page" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
-WDS.browser.get(&apos;https://stag-7-cmo-1.convirza.com/#/login&apos;);
+WDS.browser.get(&apos;https://stag-5-cmo-1.convirza.com/#/login&apos;);
 
 //Logo Verification
 var pkg = JavaImporter(org.openqa.selenium)
@@ -2280,7 +2280,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;qaautomation@yopmail.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;admin_35882@convirza.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
@@ -2436,7 +2436,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/home/comp/Downloads/testresults (90).jtl</stringProp>
+        <stringProp name="filename">/home/comp/Downloads/testresults (92).jtl</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
