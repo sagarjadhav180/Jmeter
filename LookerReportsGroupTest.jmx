@@ -2553,6 +2553,889 @@ WDS.sampleResult.sampleEnd()</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Blocked Calls Report" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig guiclass="com.googlecode.jmeter.plugins.webdriver.config.gui.ChromeDriverConfigGui" testclass="com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig" testname="jp@gc - Chrome Driver Config" enabled="true">
+          <stringProp name="WebDriverConfig.proxy_type">SYSTEM</stringProp>
+          <stringProp name="WebDriverConfig.proxy_pac_url"></stringProp>
+          <stringProp name="WebDriverConfig.http_host"></stringProp>
+          <intProp name="WebDriverConfig.http_port">8080</intProp>
+          <boolProp name="WebDriverConfig.use_http_for_all_protocols">true</boolProp>
+          <stringProp name="WebDriverConfig.https_host"></stringProp>
+          <intProp name="WebDriverConfig.https_port">8080</intProp>
+          <stringProp name="WebDriverConfig.ftp_host"></stringProp>
+          <intProp name="WebDriverConfig.ftp_port">8080</intProp>
+          <stringProp name="WebDriverConfig.socks_host"></stringProp>
+          <intProp name="WebDriverConfig.socks_port">8080</intProp>
+          <stringProp name="WebDriverConfig.no_proxy">localhost</stringProp>
+          <boolProp name="WebDriverConfig.maximize_browser">true</boolProp>
+          <boolProp name="WebDriverConfig.reset_per_iteration">false</boolProp>
+          <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
+          <stringProp name="ChromeDriverConfig.chromedriver_path">chromedriver</stringProp>
+          <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.headless_enabled">true</boolProp>
+          <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.incognito_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.no_sandbox_enabled">false</boolProp>
+        </com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Blocked Calls Report -- Open Login page" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+WDS.browser.get(&apos;https://stag-5-cmo-1.convirza.com/#/login&apos;);
+
+//Logo Verification
+var pkg = JavaImporter(org.openqa.selenium)
+var ui=JavaImporter(org.openqa.selenium.support.ui) 
+var wait=new ui.WebDriverWait(WDS.browser,59)
+
+wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//div[@class=&apos;brand login-logo&apos;]&quot;)));
+	
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Blocked Calls Report -- Login to the app" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+	//java.lang.Thread.sleep(2000);
+	var ui=JavaImporter(org.openqa.selenium.support.ui) 
+	var wait=new ui.WebDriverWait(WDS.browser,50)
+	
+	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
+	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;admin_35882@convirza.com&quot;);
+   	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
+
+
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Blocked Calls Report  -- Open Reporting Section" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+	var ui=JavaImporter(org.openqa.selenium.support.ui) 
+	var wait=new ui.WebDriverWait(WDS.browser,50)
+
+	var pkg = JavaImporter(org.openqa.selenium)
+	//var reports_sidebar = WDS.browser.findElement(pkg.By.xpath(&quot;//ul[@id=&apos;sidebar&apos;]/li[2]/a&quot;));
+	java.lang.Thread.sleep(2000);
+	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//ul[@id=&apos;sidebar&apos;]/li[2]/a&quot;)));
+	WDS.browser.findElement(pkg.By.xpath(&quot;//ul[@id=&apos;sidebar&apos;]/li[2]/a&quot;)).click();
+
+	java.lang.Thread.sleep(2000);
+
+
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Blocked Calls Report -- Navigate to report" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+	var ui=JavaImporter(org.openqa.selenium.support.ui) 
+	var wait=new ui.WebDriverWait(WDS.browser,50)
+	var pkg = JavaImporter(org.openqa.selenium)
+	
+	// Opening Account Details Report	
+	WDS.browser.findElement(pkg.By.xpath(&quot;//span[@class=&apos;select2-arrow&apos;]&quot;)).click();
+	WDS.browser.findElement(pkg.By.xpath(&quot;//input[@id=&apos;s2id_autogen1_search&apos;]&quot;)).sendKeys(&quot;Blocked Calls&quot;);
+	WDS.browser.findElement(pkg.By.xpath(&quot;//input[@id=&apos;s2id_autogen1_search&apos;]&quot;)).sendKeys(pkg.Keys.ENTER);
+	
+	
+WDS.sampleResult.sampleEnd()
+</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Blocked Calls Report -- Change filter to 465 days" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+var ui=JavaImporter(org.openqa.selenium.support.ui) 
+var wait=new ui.WebDriverWait(WDS.browser,59)
+
+var pkg = JavaImporter(org.openqa.selenium)
+	
+
+//switching frame
+	java.lang.Thread.sleep(1000);
+	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
+	//WDS.browser.switchTo().frame(iframe1);
+	WDS.browser.switchTo().frame(0);
+	java.lang.Thread.sleep(1000);
+		
+// Change Filter to 365 Days
+
+wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)));
+	
+WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)).click();
+var Days = WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[2]/table/tbody/tr[1]/td[2]/lk-dashboard-filter/lk-filter/table/tbody/tr/td[2]/span[2]/span[1]/input&quot;));
+//java.lang.Thread.sleep(4000);
+Days.clear();
+Days.sendKeys(&quot;465&quot;);
+	
+WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)).click();
+	
+
+//Click on Run 	
+var Run_btn = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//button[@class=&apos;btn run-button embed-view btn-primary&apos;][text()=&apos;Run&apos;]&quot;));
+Run_btn.click();
+
+
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Blocked Calls Report -- Check performance for 465 days" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+	var ui=JavaImporter(org.openqa.selenium.support.ui) 
+	var wait=new ui.WebDriverWait(WDS.browser,59)
+
+	var pkg = JavaImporter(org.openqa.selenium)
+	
+	// Run button verification
+	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[1]/div[2]/div[1]/button[@aria-hidden=&apos;false&apos;]&quot;)));
+
+
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Caller Activity" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig guiclass="com.googlecode.jmeter.plugins.webdriver.config.gui.ChromeDriverConfigGui" testclass="com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig" testname="jp@gc - Chrome Driver Config" enabled="true">
+          <stringProp name="WebDriverConfig.proxy_type">SYSTEM</stringProp>
+          <stringProp name="WebDriverConfig.proxy_pac_url"></stringProp>
+          <stringProp name="WebDriverConfig.http_host"></stringProp>
+          <intProp name="WebDriverConfig.http_port">8080</intProp>
+          <boolProp name="WebDriverConfig.use_http_for_all_protocols">true</boolProp>
+          <stringProp name="WebDriverConfig.https_host"></stringProp>
+          <intProp name="WebDriverConfig.https_port">8080</intProp>
+          <stringProp name="WebDriverConfig.ftp_host"></stringProp>
+          <intProp name="WebDriverConfig.ftp_port">8080</intProp>
+          <stringProp name="WebDriverConfig.socks_host"></stringProp>
+          <intProp name="WebDriverConfig.socks_port">8080</intProp>
+          <stringProp name="WebDriverConfig.no_proxy">localhost</stringProp>
+          <boolProp name="WebDriverConfig.maximize_browser">true</boolProp>
+          <boolProp name="WebDriverConfig.reset_per_iteration">false</boolProp>
+          <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
+          <stringProp name="ChromeDriverConfig.chromedriver_path">chromedriver</stringProp>
+          <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.headless_enabled">true</boolProp>
+          <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.incognito_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.no_sandbox_enabled">false</boolProp>
+        </com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Caller Activity Report -- Open Login page" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+WDS.browser.get(&apos;https://stag-5-cmo-1.convirza.com/#/login&apos;);
+
+//Logo Verification
+var pkg = JavaImporter(org.openqa.selenium)
+var ui=JavaImporter(org.openqa.selenium.support.ui) 
+var wait=new ui.WebDriverWait(WDS.browser,59)
+
+wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//div[@class=&apos;brand login-logo&apos;]&quot;)));
+	
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Caller Activity Report -- Login to the app" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+	//java.lang.Thread.sleep(2000);
+	var ui=JavaImporter(org.openqa.selenium.support.ui) 
+	var wait=new ui.WebDriverWait(WDS.browser,50)
+	
+	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
+	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;admin_35882@convirza.com&quot;);
+   	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
+
+
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Caller Activity Report  -- Open Reporting Section" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+	var ui=JavaImporter(org.openqa.selenium.support.ui) 
+	var wait=new ui.WebDriverWait(WDS.browser,50)
+
+	var pkg = JavaImporter(org.openqa.selenium)
+	//var reports_sidebar = WDS.browser.findElement(pkg.By.xpath(&quot;//ul[@id=&apos;sidebar&apos;]/li[2]/a&quot;));
+	java.lang.Thread.sleep(2000);
+	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//ul[@id=&apos;sidebar&apos;]/li[2]/a&quot;)));
+	WDS.browser.findElement(pkg.By.xpath(&quot;//ul[@id=&apos;sidebar&apos;]/li[2]/a&quot;)).click();
+
+	java.lang.Thread.sleep(2000);
+
+
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Caller Activity Report -- Navigate to report" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+	var ui=JavaImporter(org.openqa.selenium.support.ui) 
+	var wait=new ui.WebDriverWait(WDS.browser,50)
+	var pkg = JavaImporter(org.openqa.selenium)
+	
+	// Opening Account Details Report	
+	WDS.browser.findElement(pkg.By.xpath(&quot;//span[@class=&apos;select2-arrow&apos;]&quot;)).click();
+	WDS.browser.findElement(pkg.By.xpath(&quot;//input[@id=&apos;s2id_autogen1_search&apos;]&quot;)).sendKeys(&quot;Caller Activity&quot;);
+	WDS.browser.findElement(pkg.By.xpath(&quot;//input[@id=&apos;s2id_autogen1_search&apos;]&quot;)).sendKeys(pkg.Keys.ENTER);
+	
+	
+WDS.sampleResult.sampleEnd()
+</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Caller Activity Report -- Change filter to 465 days" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+var ui=JavaImporter(org.openqa.selenium.support.ui) 
+var wait=new ui.WebDriverWait(WDS.browser,59)
+
+var pkg = JavaImporter(org.openqa.selenium)
+	
+
+//switching frame
+	java.lang.Thread.sleep(1000);
+	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
+	//WDS.browser.switchTo().frame(iframe1);
+	WDS.browser.switchTo().frame(0);
+	java.lang.Thread.sleep(1000);
+		
+// Change Filter to 365 Days
+
+wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)));
+	
+WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)).click();
+var Days = WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[2]/table/tbody/tr[1]/td[2]/lk-dashboard-filter/lk-filter/table/tbody/tr/td[2]/span[2]/span[1]/input&quot;));
+//java.lang.Thread.sleep(4000);
+Days.clear();
+Days.sendKeys(&quot;465&quot;);
+	
+WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)).click();
+	
+
+//Click on Run 	
+var Run_btn = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//button[@class=&apos;btn run-button embed-view btn-primary&apos;][text()=&apos;Run&apos;]&quot;));
+Run_btn.click();
+
+
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Caller Activity Report -- Check performance for 465 days" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+	var ui=JavaImporter(org.openqa.selenium.support.ui) 
+	var wait=new ui.WebDriverWait(WDS.browser,59)
+
+	var pkg = JavaImporter(org.openqa.selenium)
+	
+	// Run button verification
+	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[1]/div[2]/div[1]/button[@aria-hidden=&apos;false&apos;]&quot;)));
+
+
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Call Back" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig guiclass="com.googlecode.jmeter.plugins.webdriver.config.gui.ChromeDriverConfigGui" testclass="com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig" testname="jp@gc - Chrome Driver Config" enabled="true">
+          <stringProp name="WebDriverConfig.proxy_type">SYSTEM</stringProp>
+          <stringProp name="WebDriverConfig.proxy_pac_url"></stringProp>
+          <stringProp name="WebDriverConfig.http_host"></stringProp>
+          <intProp name="WebDriverConfig.http_port">8080</intProp>
+          <boolProp name="WebDriverConfig.use_http_for_all_protocols">true</boolProp>
+          <stringProp name="WebDriverConfig.https_host"></stringProp>
+          <intProp name="WebDriverConfig.https_port">8080</intProp>
+          <stringProp name="WebDriverConfig.ftp_host"></stringProp>
+          <intProp name="WebDriverConfig.ftp_port">8080</intProp>
+          <stringProp name="WebDriverConfig.socks_host"></stringProp>
+          <intProp name="WebDriverConfig.socks_port">8080</intProp>
+          <stringProp name="WebDriverConfig.no_proxy">localhost</stringProp>
+          <boolProp name="WebDriverConfig.maximize_browser">true</boolProp>
+          <boolProp name="WebDriverConfig.reset_per_iteration">false</boolProp>
+          <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
+          <stringProp name="ChromeDriverConfig.chromedriver_path">chromedriver</stringProp>
+          <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.headless_enabled">true</boolProp>
+          <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.incognito_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.no_sandbox_enabled">false</boolProp>
+        </com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Call Back Report -- Open Login page" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+WDS.browser.get(&apos;https://stag-5-cmo-1.convirza.com/#/login&apos;);
+
+//Logo Verification
+var pkg = JavaImporter(org.openqa.selenium)
+var ui=JavaImporter(org.openqa.selenium.support.ui) 
+var wait=new ui.WebDriverWait(WDS.browser,59)
+
+wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//div[@class=&apos;brand login-logo&apos;]&quot;)));
+	
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Call Back Report -- Login to the app" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+	//java.lang.Thread.sleep(2000);
+	var ui=JavaImporter(org.openqa.selenium.support.ui) 
+	var wait=new ui.WebDriverWait(WDS.browser,50)
+	
+	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
+	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;admin_35882@convirza.com&quot;);
+   	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
+
+
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Call Back Report  -- Open Reporting Section" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+	var ui=JavaImporter(org.openqa.selenium.support.ui) 
+	var wait=new ui.WebDriverWait(WDS.browser,50)
+
+	var pkg = JavaImporter(org.openqa.selenium)
+	//var reports_sidebar = WDS.browser.findElement(pkg.By.xpath(&quot;//ul[@id=&apos;sidebar&apos;]/li[2]/a&quot;));
+	java.lang.Thread.sleep(2000);
+	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//ul[@id=&apos;sidebar&apos;]/li[2]/a&quot;)));
+	WDS.browser.findElement(pkg.By.xpath(&quot;//ul[@id=&apos;sidebar&apos;]/li[2]/a&quot;)).click();
+
+	java.lang.Thread.sleep(2000);
+
+
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Call Back Report -- Navigate to report" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+	var ui=JavaImporter(org.openqa.selenium.support.ui) 
+	var wait=new ui.WebDriverWait(WDS.browser,50)
+	var pkg = JavaImporter(org.openqa.selenium)
+	
+	// Opening Account Details Report	
+	WDS.browser.findElement(pkg.By.xpath(&quot;//span[@class=&apos;select2-arrow&apos;]&quot;)).click();
+	WDS.browser.findElement(pkg.By.xpath(&quot;//input[@id=&apos;s2id_autogen1_search&apos;]&quot;)).sendKeys(&quot;Call Back&quot;);
+	WDS.browser.findElement(pkg.By.xpath(&quot;//input[@id=&apos;s2id_autogen1_search&apos;]&quot;)).sendKeys(pkg.Keys.ENTER);
+	
+	
+WDS.sampleResult.sampleEnd()
+</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Call Back Report -- Change filter to 465 days" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+var ui=JavaImporter(org.openqa.selenium.support.ui) 
+var wait=new ui.WebDriverWait(WDS.browser,59)
+
+var pkg = JavaImporter(org.openqa.selenium)
+	
+
+//switching frame
+	java.lang.Thread.sleep(1000);
+	var iframe1 = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//iframe[@id=&apos;looker&apos;]&quot;));
+	//WDS.browser.switchTo().frame(iframe1);
+	WDS.browser.switchTo().frame(0);
+	java.lang.Thread.sleep(1000);
+		
+// Change Filter to 365 Days
+
+wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)));
+	
+WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)).click();
+var Days = WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[2]/table/tbody/tr[1]/td[2]/lk-dashboard-filter/lk-filter/table/tbody/tr/td[2]/span[2]/span[1]/input&quot;));
+//java.lang.Thread.sleep(4000);
+Days.clear();
+Days.sendKeys(&quot;465&quot;);
+	
+WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)).click();
+	
+
+//Click on Run 	
+var Run_btn = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//button[@class=&apos;btn run-button embed-view btn-primary&apos;][text()=&apos;Run&apos;]&quot;));
+Run_btn.click();
+
+
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Call Back Report -- Check performance for 465 days" enabled="true">
+          <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
+
+	var ui=JavaImporter(org.openqa.selenium.support.ui) 
+	var wait=new ui.WebDriverWait(WDS.browser,59)
+
+	var pkg = JavaImporter(org.openqa.selenium)
+	
+	// Run button verification
+	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[1]/div[2]/div[1]/button[@aria-hidden=&apos;false&apos;]&quot;)));
+
+
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
     </hashTree>
   </hashTree>
 </jmeterTestPlan>
