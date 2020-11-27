@@ -43,7 +43,7 @@
           <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
           <stringProp name="ChromeDriverConfig.chromedriver_path">chromedriver</stringProp>
           <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
-          <boolProp name="ChromeDriverConfig.headless_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.headless_enabled">true</boolProp>
           <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.incognito_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.no_sandbox_enabled">false</boolProp>
@@ -4862,7 +4862,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/home/comp/Downloads/testresults (38).jtl</stringProp>
+        <stringProp name="filename">/home/comp/Downloads/testresults (44).jtl</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
