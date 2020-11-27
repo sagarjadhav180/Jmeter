@@ -43,7 +43,7 @@
           <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
           <stringProp name="ChromeDriverConfig.chromedriver_path">chromedriver</stringProp>
           <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
-          <boolProp name="ChromeDriverConfig.headless_enabled">true</boolProp>
+          <boolProp name="ChromeDriverConfig.headless_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.incognito_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.no_sandbox_enabled">false</boolProp>
@@ -117,7 +117,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
-var wait=new ui.WebDriverWait(WDS.browser,59)
+var wait=new ui.WebDriverWait(WDS.browser,180)
 
 var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -150,7 +150,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,59)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -394,7 +394,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
-var wait=new ui.WebDriverWait(WDS.browser,59)
+var wait=new ui.WebDriverWait(WDS.browser,180)
 
 var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -434,7 +434,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,59)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -677,7 +677,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
-var wait=new ui.WebDriverWait(WDS.browser,59)
+var wait=new ui.WebDriverWait(WDS.browser,180)
 
 var pkg = JavaImporter(org.openqa.selenium)
 
@@ -716,7 +716,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,59)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -959,7 +959,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
-var wait=new ui.WebDriverWait(WDS.browser,59)
+var wait=new ui.WebDriverWait(WDS.browser,180)
 
 var pkg = JavaImporter(org.openqa.selenium)
 
@@ -998,7 +998,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,59)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -1241,7 +1241,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
-var wait=new ui.WebDriverWait(WDS.browser,59)
+var wait=new ui.WebDriverWait(WDS.browser,180)
 
 var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -1280,7 +1280,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,59)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -1523,7 +1523,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
-var wait=new ui.WebDriverWait(WDS.browser,59)
+var wait=new ui.WebDriverWait(WDS.browser,180)
 
 var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -1563,7 +1563,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,59)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -1808,7 +1808,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,59)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 
@@ -2058,7 +2058,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
-var wait=new ui.WebDriverWait(WDS.browser,59)
+var wait=new ui.WebDriverWait(WDS.browser,180)
 
 var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -2098,7 +2098,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,59)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -2323,7 +2323,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,50)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
      var js = JavaImporter(org.openqa.selenium.JavascriptExecutor)
      var driver = JavaImporter(org.openqa.selenium.WebDriver)
      
@@ -2358,7 +2358,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,50)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	//var reports_sidebar = WDS.browser.findElement(pkg.By.xpath(&quot;//ul[@id=&apos;sidebar&apos;]/li[2]/a&quot;));
@@ -2509,7 +2509,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,50)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	//var reports_sidebar = WDS.browser.findElement(pkg.By.xpath(&quot;//ul[@id=&apos;sidebar&apos;]/li[2]/a&quot;));
@@ -2678,7 +2678,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
-var wait=new ui.WebDriverWait(WDS.browser,59)
+var wait=new ui.WebDriverWait(WDS.browser,180)
 
 var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -2718,7 +2718,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,59)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -2961,7 +2961,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
-var wait=new ui.WebDriverWait(WDS.browser,59)
+var wait=new ui.WebDriverWait(WDS.browser,180)
 
 var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -3001,7 +3001,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,59)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -3244,7 +3244,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
-var wait=new ui.WebDriverWait(WDS.browser,59)
+var wait=new ui.WebDriverWait(WDS.browser,180)
 
 var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -3284,7 +3284,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,59)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -3527,7 +3527,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
-var wait=new ui.WebDriverWait(WDS.browser,59)
+var wait=new ui.WebDriverWait(WDS.browser,180)
 
 var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -3567,7 +3567,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,59)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -3810,7 +3810,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
-var wait=new ui.WebDriverWait(WDS.browser,59)
+var wait=new ui.WebDriverWait(WDS.browser,180)
 
 var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -3850,7 +3850,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,59)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -4093,7 +4093,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
-var wait=new ui.WebDriverWait(WDS.browser,59)
+var wait=new ui.WebDriverWait(WDS.browser,180)
 
 var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -4133,7 +4133,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,59)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -4375,7 +4375,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
-var wait=new ui.WebDriverWait(WDS.browser,59)
+var wait=new ui.WebDriverWait(WDS.browser,180)
 
 var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -4415,7 +4415,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,59)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -4658,7 +4658,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 var ui=JavaImporter(org.openqa.selenium.support.ui) 
-var wait=new ui.WebDriverWait(WDS.browser,59)
+var wait=new ui.WebDriverWait(WDS.browser,180)
 
 var pkg = JavaImporter(org.openqa.selenium)
 	
@@ -4703,7 +4703,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
-	var wait=new ui.WebDriverWait(WDS.browser,59)
+	var wait=new ui.WebDriverWait(WDS.browser,180)
 
 	var pkg = JavaImporter(org.openqa.selenium)
 	
