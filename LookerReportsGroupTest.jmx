@@ -2708,15 +2708,15 @@ WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&
 
 
 
-wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//div[@class=&apos;btn btn-danger&apos;][text()=&apos;Stop&apos;]&quot;)));
-var stop_btn = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//div[@class=&apos;btn btn-danger&apos;][text()=&apos;Stop&apos;]&quot;));
-stop_btn.click();
+//wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//div[@class=&apos;btn btn-danger&apos;][text()=&apos;Stop&apos;]&quot;)));
+//var stop_btn = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//div[@class=&apos;btn btn-danger&apos;][text()=&apos;Stop&apos;]&quot;));
+//stop_btn.click();
 
 
 var Days = WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[2]/table/tbody/tr[1]/td[2]/lk-dashboard-filter/lk-filter/table/tbody/tr/td[2]/span[2]/span[1]/input&quot;));
 //java.lang.Thread.sleep(4000);
 Days.clear();
-Days.sendKeys(&quot;365&quot;);
+Days.sendKeys(&quot;90&quot;);
 	
 WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)).click();
 	
@@ -2732,7 +2732,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Blocked Calls Report -- Check performance for 465 days" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Blocked Calls Report -- Check performance for 90 days" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
 	var ui=JavaImporter(org.openqa.selenium.support.ui) 
@@ -4886,7 +4886,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/home/comp/Downloads/testresults (52).jtl</stringProp>
+        <stringProp name="filename">/home/comp/Downloads/testresults (54).jtl</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
