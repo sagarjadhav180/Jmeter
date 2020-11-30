@@ -4594,9 +4594,9 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <boolProp name="WebDriverConfig.maximize_browser">true</boolProp>
           <boolProp name="WebDriverConfig.reset_per_iteration">false</boolProp>
           <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
-          <stringProp name="ChromeDriverConfig.chromedriver_path">/home/comp/git/Jmeter/chromedriver</stringProp>
+          <stringProp name="ChromeDriverConfig.chromedriver_path">chromedriver</stringProp>
           <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
-          <boolProp name="ChromeDriverConfig.headless_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.headless_enabled">true</boolProp>
           <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.incognito_enabled">false</boolProp>
           <boolProp name="ChromeDriverConfig.no_sandbox_enabled">false</boolProp>
@@ -4605,7 +4605,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
         <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Webhook Logs -- Open Login page" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
-WDS.browser.get(&apos;https://stag-7-cmo-1.convirza.com/#/login&apos;);
+WDS.browser.get(&apos;https://stag-5-cmo-1.convirza.com/#/login&apos;);
 
 //Logo Verification
 var pkg = JavaImporter(org.openqa.selenium)
@@ -4628,9 +4628,9 @@ WDS.sampleResult.sampleEnd()</stringProp>
 	
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.id(&quot;email&quot;)));
 	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;lmcsuper@logmycalls.com&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;email&quot;)).sendKeys(&quot;admin_35882@convirza.com&quot;);
    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).clear();
-    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;ScottIsDaMan&quot;);
+    	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;password&quot;)).sendKeys(&quot;lmc2demo&quot;);
     	WDS.browser.findElement(org.openqa.selenium.By.id(&quot;b1&quot;)).click();
 
 
