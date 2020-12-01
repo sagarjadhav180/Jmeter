@@ -128,7 +128,9 @@ wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;/
 	
 WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)).click();
 
-
+wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//div[@class=&apos;btn btn-danger&apos;][text()=&apos;Stop&apos;]&quot;)));
+var stop_btn = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//div[@class=&apos;btn btn-danger&apos;][text()=&apos;Stop&apos;]&quot;));
+stop_btn.click();
 
 var Days = WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[2]/table/tbody/tr[1]/td[2]/lk-dashboard-filter/lk-filter/table/tbody/tr/td[2]/span[2]/span[1]/input&quot;));
 //java.lang.Thread.sleep(4000);
