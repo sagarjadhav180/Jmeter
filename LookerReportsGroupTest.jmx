@@ -135,7 +135,7 @@ stop_btn.click();
 var Days = WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[2]/table/tbody/tr[1]/td[2]/lk-dashboard-filter/lk-filter/table/tbody/tr/td[2]/span[2]/span[1]/input&quot;));
 //java.lang.Thread.sleep(4000);
 Days.clear();
-Days.sendKeys(&quot;365&quot;);
+Days.sendKeys(&quot;465&quot;);
 	
 WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)).click();
 	
@@ -708,7 +708,7 @@ stop_btn.click();
 var Days = WDS.browser.findElement(pkg.By.xpath(&quot;//*[@id=&apos;dashboard-filter-section&apos;]/div[2]/table/tbody/tr[1]/td[2]/lk-dashboard-filter/lk-filter/table/tbody/tr/td[2]/span[2]/span[1]/input&quot;));
 //java.lang.Thread.sleep(4000);
 Days.clear();
-Days.sendKeys(&quot;120&quot;);
+Days.sendKeys(&quot;180&quot;);
 	
 WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;title no-overflow&apos;]//strong[@class=&apos;filter-section-title&apos;]&quot;)).click();
 	
@@ -4888,7 +4888,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/home/comp/Downloads/testresults (11).jtl</stringProp>
+        <stringProp name="filename">/home/comp/Downloads/testresults (12).jtl</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
